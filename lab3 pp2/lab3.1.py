@@ -7,3 +7,4 @@ class myclass:
     
     def printstring (self):
         print(self.my_string.upper())
+        
