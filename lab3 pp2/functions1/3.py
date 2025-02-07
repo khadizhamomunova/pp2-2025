@@ -15,7 +15,7 @@ legs = int(input("How many legs?: "))
 def solve(numheads, numlegs):
     rabbit = (numlegs / 2) - numheads
     chicken = numheads - rabbit
-    print("chickens : ", int(chicken))
-    print("rabbits : ", int(rabbit))
+    print("chickens: ", int(chicken))
+    print("rabbits: ", int(rabbit))
     
 solve(heads, legs)
