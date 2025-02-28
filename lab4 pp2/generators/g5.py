@@ -5,3 +5,5 @@ def nums(n):
 n = int(input())
 for i in nums(n):
     print(i, end = " ")
+    
+    
