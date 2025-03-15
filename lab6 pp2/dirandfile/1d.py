@@ -18,5 +18,5 @@ def list_directories_files(path):
         for file in files:
             print(os.path.join(root, file))
 
-path = 'D:\VsCode\python'
+path = "C:/Users/77475/.vscode/pp2.lab1/pp2-2025"
 list_directories_files(path)
