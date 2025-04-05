@@ -30,7 +30,7 @@ font = pygame.font.SysFont("Verdana", 60)
 font_small = pygame.font.SysFont("Verdana", 20)
 game_over = font.render("Game Over", True, BLACK)
 
-background = pygame.image.load("track.jpg")
+background = pygame.image.load("lab9 pp2/track.jpg")
 
 # Create a white screen
 DISPLAYSURF = pygame.display.set_mode((400, 600))
@@ -38,7 +38,7 @@ DISPLAYSURF.fill(WHITE)
 pygame.display.set_caption("Game")
 
 # background sound
-pygame.mixer.music.load('background.wav')
+pygame.mixer.music.load('lab9 pp2/lab9_racer_background.wav')
 pygame.mixer.music.play(-1)  # i use -1 to loop the music
 
 # Create a sprite group Enemy
@@ -48,7 +48,7 @@ class Enemy(pygame.sprite.Sprite):
     # constructor
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("Enemy.png")
+        self.image = pygame.image.load("lab9 pp2/Enemy copy (1).png")
         self.rect = self.image.get_rect()
         self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), 0)
     # move method
@@ -68,7 +68,7 @@ class Player(pygame.sprite.Sprite):
     # constructor
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("Player.png")
+        self.image = pygame.image.load("lab9 pp2/Player.png")
         self.rect = self.image.get_rect()
         self.rect.center = (160, 520)
     # move method
@@ -89,7 +89,7 @@ class Coin(pygame.sprite.Sprite):
     # constructor
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("coin.png")
+        self.image = pygame.image.load("lab9 pp2/coin.png")
         self.image = pygame.transform.scale(self.image, (40, 40))
         self.rect = self.image.get_rect()
         self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), 0)
@@ -108,7 +108,7 @@ class BigCoin(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
         self.image = pygame.image.load(
-            'supercoin.png')
+            'lab9 pp2/supercoin.png')
         self.image = pygame.transform.scale(self.image, (40, 40))
         self.rect = self.image.get_rect()
 
