@@ -1,5 +1,5 @@
-import pygame  # Import the pygame library for graphics handling
-import math  # Import the math library for mathematical operations
+import pygame  
+import math  
 
 # Initialize pygame
 pygame.init()
@@ -97,6 +97,7 @@ def draw_menu(color):
 
     # Load the eraser icon and draw it
     eraser = pygame.image.load("lab8 pp2/229836.png")
+    eraser = pygame.transform.scale(eraser, (50, 40))
     eraser_rect = eraser.get_rect(topleft=(WIDTH - 150, 7))
     eraser_rect.width = eraser_rect.height = 25
     screen.blit(eraser, [WIDTH - 150, 7, 25, 25])
@@ -213,11 +214,11 @@ while run:
                 if colors[i].collidepoint(event.pos):  # If the mouse click is within the color rectangle
                     active_color = rgbs[i]  # Set the active color to the corresponding RGB value
 
-            for i in brushes:  # Iterate over the brush icons
-                if i[0].collidepoint(event.pos):  # If the mouse click is within the brush icon
+            for i in brushes: 
+                if i[0].collidepoint(event.pos):  
                     active_figure = i[1]  # Set the active figure to the corresponding brush type
 
-        # Update the display
+      
         pygame.display.flip()
 
 # Quit pygame
