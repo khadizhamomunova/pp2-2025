@@ -1,9 +1,9 @@
 import psycopg2
 
 conn = psycopg2.connect(
-	database="Phonebook",
+	database="lab10",
 	user='postgres',
-	password='qwerty',
+	password='Mk22335577',
 	host='localhost',
 	#port= '5432'
 )
