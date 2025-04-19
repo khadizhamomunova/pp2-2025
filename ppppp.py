@@ -1,12 +1,14 @@
-import time
-import math
-def my(num, miliseconds):
-    time.sleep(miliseconds / 1000)
-    result = math.sqrt(num)
-    return result
+import psycopg2
 
-num = int(input())
-miliseconds = int(input())
-output = my(num, miliseconds)
-print(f"Square root of {num} after {miliseconds} miliseconds is", output)
-
+try:
+    conn = psycopg2.connect(
+        dbname="lab10",
+        user="postgres",
+        password="Mk22335577",
+        host="localhost",
+        port="5432"
+    )
+    print("✅ Успешное подключение к базе данных!")
+    conn.close()
+except Exception as e:
+    print("❌ Ошибка подключения:", e)
