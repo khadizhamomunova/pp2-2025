@@ -104,14 +104,14 @@ def draw_menu(color):
 
     # Draw color rectangles
     blue = pygame.draw.rect(screen, (0, 0, 255), [WIDTH - 35, 10, 25, 25])
-    red = pygame.draw.rect(screen, (255, 0, 0), [WIDTH - 35, 35, 25, 25])
-    green = pygame.draw.rect(screen, (0, 255, 0), [WIDTH - 60, 10, 25, 25])
+    red = pygame.draw.rect(screen, (233, 150, 122), [WIDTH - 35, 35, 25, 25])
+    green = pygame.draw.rect(screen, (107, 142, 35), [WIDTH - 60, 10, 25, 25])
     yellow = pygame.draw.rect(screen, (255, 255, 0), [WIDTH - 60, 35, 25, 25])
     teal = pygame.draw.rect(screen, (0, 255, 255), [WIDTH - 85, 10, 25, 25])
     purple = pygame.draw.rect(screen, (255, 0, 255), [WIDTH - 85, 35, 25, 25])
     black = pygame.draw.rect(screen, (0, 0, 0), [WIDTH - 110, 10, 25, 25])
     color_rect = [blue, red, green, yellow, teal, purple, black, eraser_rect]
-    rgb_list = [(0, 0, 255), (255, 0, 0), (0, 255, 0), (255, 255, 0),
+    rgb_list = [(0, 0, 255), (233, 150, 122), (107, 142, 35), (255, 255, 0),
                 (0, 255, 255), (255, 0, 255), (0, 0, 0), (255, 255, 255)]
 
     return brush_list, color_rect, rgb_list
