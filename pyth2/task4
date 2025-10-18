@@ -1,0 +1,4 @@
+import random
+same = random.randint(1, 6)
+for i in range(5):
+    print(same)
